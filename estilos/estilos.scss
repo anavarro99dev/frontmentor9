@@ -12,19 +12,30 @@ body {
   h2,
   p {
     font-family: "Outfit", sans-serif;
-    color: $Dark_blue;
   }
   h2 {
-    font-weight: 700;
+    color: $Dark_blue;
     font-size: rem(24px);
+    font-weight: 700;
   }
   p {
+    color: $Grayish_blue;
     font-size: rem(15px);
+    font-weight: 400;
+  }
+  @include movil{
+    position: initial !important;
+  }
+}
+
+div.w3-card{
+  @include movil{
+    width: 90vw !important;
   }
 }
 
 footer {
-  // text-align: center;
+  text-align: center;
   color: darkgreen;
   a {
     color: darkgrey;
@@ -34,8 +45,5 @@ footer {
       color: black;
       text-decoration: none;
     }
-  }
-  @include movil {
-    position: relative !important;
   }
 }
